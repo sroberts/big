@@ -2,6 +2,8 @@
  * @jest-environment jsdom
  */
 
+/* eslint-env jest, node */
+
 const fs = require('fs');
 const path = require('path');
 
