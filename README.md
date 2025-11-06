@@ -1,5 +1,7 @@
 # Big
 
+[![Tests](https://github.com/sroberts/big/actions/workflows/test.yml/badge.svg)](https://github.com/sroberts/big/actions/workflows/test.yml)
+
 <p align="center">
   <img width="540" src='.github/logo.png' />
 </p>
