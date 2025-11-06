@@ -1,0 +1,27 @@
+{
+  "name": "big",
+  "version": "1.0.0",
+  "description": "A presentation system that works great for creative, hurried people making focused presentations",
+  "main": "big.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sroberts/big.git"
+  },
+  "keywords": [
+    "presentation",
+    "slides"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.1.5",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
