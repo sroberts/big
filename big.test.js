@@ -129,7 +129,9 @@ describe('Big Presentation Library', () => {
         <div>Slide 3</div>
       `;
 
-      // Execute big.js using Function constructor to avoid let re-declaration
+      // Execute big.js using Function constructor to avoid let re-declaration issues.
+      // This is only used in tests to load the module in a fresh scope each time.
+      // Note: In a production environment, proper module loading should be used instead.
       const initBig = new Function(bigJs);
       initBig();
 
