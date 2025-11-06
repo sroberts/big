@@ -73,18 +73,17 @@ describe('Big Presentation Library', () => {
         return parseInt(window.location.hash.substring(1), 10);
       }
       
-      // Mock window.location.hash
-      delete window.location;
-      window.location = { hash: '#3' };
+      // Test with hash values using jsdom's location
+      window.location.hash = '#3';
       expect(parseHash()).toBe(3);
       
-      window.location = { hash: '#0' };
+      window.location.hash = '#0';
       expect(parseHash()).toBe(0);
       
-      window.location = { hash: '#42' };
+      window.location.hash = '#42';
       expect(parseHash()).toBe(42);
       
-      window.location = { hash: '' };
+      window.location.hash = '';
       expect(parseHash()).toBeNaN();
     });
   });
